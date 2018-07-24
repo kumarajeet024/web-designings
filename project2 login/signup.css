@@ -1,0 +1,56 @@
+body{
+	margin: 20px;
+	padding: 0px;
+	text-align:center;
+	background-image:url("body2.jpg");
+	background-position:center;
+	background-size:cover;
+	
+}
+
+h1{
+	
+
+    font-family: 'Handlee', cursive;
+	font-size: 90px;
+	color:#f1f2f6;
+	
+}
+
+h2{
+	
+
+    font-family: 'Pacifico', cursive;
+	font-size:40px;
+	color:#c8d6e5;
+}
+
+h3{
+	font-size:20px;
+font-family: 'Open Sans Condensed', sans-serif;
+color:#3498db;
+
+	
+}
+
+p{
+	font-size:25px;
+	color:white;
+	margin-top:400px;
+}
+
+.first{
+	
+	float: left;
+	margin-top: 30px;
+	padding-left:300px;
+
+}
+
+.sec{
+	
+	float:right;
+	padding-right:300px;
+	}
+	
+	

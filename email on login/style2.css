@@ -1,0 +1,51 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	background: url(ajeet1.jpg);
+	background-size: cover;
+	background-position:center;
+}
+.welcome{
+	color: #6c5ce7;
+	font-family: 'Montserrat', sans-serif;
+	margin-top:100px;
+	transition: all 4s ease-in-out;
+	font-weight:normal;
+
+
+}
+.welcome h1{
+	font-size:60px;
+}
+.welcome h2{
+	font-size: 40px;
+}
+
+form {
+	margin:60px;
+	transition:all 4s ease-in-out;
+	text-align:center;
+}
+.form1{
+	width:500px;
+	background: transparent;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid gray;
+	font-size:22px;
+	margin-bottom: 16px;
+}
+input{
+	height: 50px;
+}
+form .signup{
+	background:#55efc4;
+	border-color: transparent;
+	color: #fff;
+	font-size:22px;
+	font-weight: normal;
+	letter-spacing:2px;
+	margin-top:22px;
+	
+}

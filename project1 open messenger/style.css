@@ -1,0 +1,49 @@
+#txtname,#txtmsg{
+		width: 100%;
+		margin: 10px;
+		padding: 20px;
+		border: 1px solid #e84393;
+		border-radius: 4px;
+    background: transparent;
+
+	outline: none;
+	border-bottom: 1px solid gray;
+	font-size:22px;
+	margin-bottom: 16px;
+
+	}
+	
+	#conatiner{
+		width : 50%;
+		padding: 10px;
+        }
+        
+    .start{
+            
+            margin:30px;
+            padding-left: 10px;
+            background-image: url("body1.jpg");
+        background-size:cover;
+            background-position:center;
+        }
+		
+h1{
+    text-align: center;
+    font-size: 60px;
+font-family: 'Poiret One', cursive;
+    color: #74b9ff
+}
+
+#submit,#refresh{
+    background:#f6e58d;
+	border-color: transparent;
+	color: #fff;
+	font-size:30px;
+	font-weight: normal;
+	letter-spacing:2px;
+	margin-top:22px;
+	
+}
+
+
+	
