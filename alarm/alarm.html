@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Alarm Clock</title>
+			
+
+		<script src="alarm.js"></script>
+	</head>
+	<body onload="startTime()">
+		<h1>Current Time :: </h1>
+		<div id="currentTime"></div>
+		<h3>Wanna Set An Alarm</h3>
+		<input type="text" placeholder="Hour" id="hour">
+		<input type="text" placeholder="Minutes" id="minutes">
+		<input type="text" placeholder="seconds" id="seconds">
+		<button onclick="setAlarm()">Set Alarm</button>
+	</body>
+</html>
