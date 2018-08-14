@@ -1,0 +1,142 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+#first{
+width:100%;
+margin:auto;
+}
+header {
+	
+	background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("ajeet.jpg");
+	height: 100vh;
+	-webkit-background-size:cover;
+	background-size:cover;
+	background-position:center center;
+	position:relative;
+}
+
+.navbar {
+float:right;
+list-style:none;
+margin-top:30px;
+
+}
+
+.navbar li{
+display: inline-block;
+}
+
+.navbar li a{
+	padding:30px;
+color: #fff;
+text-decoration: none;
+padding: 5px 20px;
+font-family: 'Poiret One', cursive;
+font-size:30px;
+}
+
+.navbar li a:hover {
+background: #fff;
+color:#333;
+}
+.text {
+position:absolute;
+width:100%;
+height:300px;
+margin:20% 6%;
+text-align:center;
+}
+
+.text h1{
+text-align:center;
+font-family: 'Josefin Slab', serif;
+
+color: #fff;
+text-transform: uppercase;
+font-size: 70px;
+}
+table {
+  height: 40%;
+  left: 10%;
+  margin: 20px auto;
+  overflow-y: scroll;
+  position: static;
+  width: 80%;
+}
+
+th {
+  background: #182C61;
+  color: #FFF;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+   padding: 20px;
+  text-align: left;
+  width: 33.3333%;
+
+}
+
+tr {
+  background: #ffcccc;
+  font-family: 'Scope One', serif;
+  border-bottom: 1px solid #FFF;
+  margin-bottom: 5px;
+}
+
+td {
+font-family: 'Scope One', serif;
+  font-weight: 400;
+  font-size:18px;
+  padding: 20px;
+  text-align: left;
+  width: 33.3333%;
+}
+#skills img { border-radius:50%;
+float:left;
+margin-top:20px;
+margin-right:10px;
+}
+#skills{
+	color:#ffaf40;
+	padding-top:20px;
+	font-family: 'David Libre', serif;
+	font-size:30px;
+
+	margin-left:10%;
+	
+}
+	#hobbies{
+		color:#ffaf40;
+		padding-top:20px;
+			font-size:30px;
+		font-family: 'David Libre', serif;
+
+		margin-left:10%;
+	}
+	#hobbies img{
+		border-radius:40%;
+		padding-right:40px;
+		
+	}
+	
+	p{
+		color:#706fd3;
+	font-size:25px;
+	font-family: 'Scope One', serif;
+
+	}
+	#qualifications{
+		
+		padding-top:30px;
+		margin-left:10%;
+		font-family: 'David Libre', serif;
+	font-size:30px;
+	}
+	#qualifications h1{
+		color:#ffaf40;
+	}
+	
