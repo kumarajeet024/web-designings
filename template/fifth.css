@@ -1,0 +1,27 @@
+body{
+    margin:95px;
+    padding:0px;
+}
+.left-block{
+    float:left;
+    width:30%;
+    background-color:#ced6e0;
+
+}
+.right-block{
+    float:left;
+    width:65%;
+    background-color:#57606f;
+}
+#first-name,#last-name{
+    font-family: 'Antic Slab', serif;
+    font-size:45px;
+    padding-left:80px;
+}
+#profile{
+    padding-left:40px;
+
+}
+.group1{
+    
+}

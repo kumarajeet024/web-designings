@@ -1,0 +1,54 @@
+.body{
+	margin:150px;
+	padding:0;
+}
+.a4{
+	border:2px;
+	border-width:595px 842px 595px 842px;
+}
+.line{
+margin-right:100px;
+margin-left:300px;
+height:3px;
+	background-color:red; 
+
+
+}
+.name{
+	color:red;
+	font-family: 'Kosugi Maru', sans-serif;
+	margin-left:400px;
+	font-size:50px;
+
+}
+.firstdiv{
+	margin-left:310px;
+
+}
+.fir1{
+	float:left;
+}
+.fir{
+	float:right;
+	padding-right:350px;
+}
+.left{
+	color:red;
+font-family: 'Dosis', sans-serif;
+padding-top: 50px;
+}
+.obj{
+	padding-top:150px;
+
+}.div{
+
+padding-left: 400px;
+font-family: 'Lora', serif;
+
+}
+.line1{
+	margin-right:1300px;
+	height:3px;
+	background-color:red; 
+
+}
