@@ -60,12 +60,105 @@ if ($gClient->getAccessToken()) {
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Login with Google using PHP by CodexWorld</title>
+<title>Login with Google</title>
 <style type="text/css">
 h1{font-family:Arial, Helvetica, sans-serif;color:#999999;}
 </style>
+    
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./mystyle.css">
 </head>
-<body>
+<body background="o-SUCCESS-facebook.jpg"><header>
+  <div class="container">
+    <div id="branding">
+      <h1><span class="highlight">CV Builder </span>for  success destined professionals</h1>
+    </div>
+    <nav>
+      <ul>
+        <li class="current"><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="login_form.php">Sign in</a></li>
+      </ul>
+    </nav>
+  </div>
+    </header>
+    <section id="showcase">
+      <div class="container">
+        <h1>Create your professional resume in 15 minutes</h1>
+        <p>My resume builder takes away all of the stress and difficulty that comes with making a resume. I created a cleanly formatted and persuasive resume that landed me more interviews, and employment soon after.</p>
+         <img src="20180410_200245.png" >
+      </div>
+
+    </section>
+    <section id="register">
+      <div class="container">
+        <h1>Login to access </h1>
+
+        <form action="?php echo $current_file; ?" method="POST"><div class="formgroup">
+          <div class="design">Username:<br>
+          <input type="text" placeholder="Enter your username...." name="username"><br>
+          
+          Password:<br>
+          <input type="password" placeholder="Enter password...." name="password"><br>
+          
+          <button type="submit" class="button_1">Log in</button>
+           <a href="myregister.php">Don't have an account yet?<br> Create Account here!!!</a>
+        </div></div>
+      </form>
+    </div>
+          
+     
+    </section>
 <div><?php echo $output; ?></div>
 </body>
 </html>
+
+<?php
+
+include 'dbcon.php';
+include_once 'userdata.inc.php';
+if(isset($_POST['username'])&& isset($_POST['password']))
+  {$username=$_POST['username'];
+   $password=$_POST['password'];  
+   $password_hash=md5($password);
+   if(!empty($username) && !empty($password))
+   	{
+   		$stmt=$db->prepare("SELECT * FROM my_users WHERE Username=? AND Password=?");
+      $stmt->bindParam(1,$username);
+      $stmt->bindParam(2,$password_hash);
+      $attempt=$stmt->execute();
+        if($attempt)
+        {
+          $query_num_rows=$stmt->rowCount();
+          
+        
+        if ($query_num_rows==0)
+             {
+             	echo "Invalid Data Entered !!!";
+             	echo "Please<a href='myregister.php'>Register</a>";
+             }
+             else if($query_num_rows==1)
+             { 
+              while($row=$stmt->fetch(PDO::FETCH_ASSOC))
+                {
+                  $uid=htmlentities($row['ID']);
+
+             
+                echo $uid;
+              }
+             	$_SESSION['uid']=$uid;
+             	header('Location:form_pers.php');
+
+             }
+      }             
+     }
+     else
+       	{
+       		echo "Please enter all details asked here!!";
+       	}
+   }
+ ?>
+
+
+
+
